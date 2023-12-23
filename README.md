@@ -2,7 +2,7 @@
 
 ⚡️
 
-Fast encoding and decoding for all variable [protobuf-style varint bytes](https://developers.google.com/protocol-buffers/docs/encoding#varints).
+Fast encoding and decoding for all variable [protobuf varint types](https://developers.google.com/protocol-buffers/docs/encoding#varints).
 
 - Supports 64bit values using `longfn` or `long.js` compatible objects.
 - Protocol-buffer compatible for **all** edge cases
