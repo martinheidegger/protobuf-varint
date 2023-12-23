@@ -1,0 +1,6 @@
+.history
+coverage
+.vscode
+.github
+*.tgz
+test

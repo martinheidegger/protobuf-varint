@@ -1,0 +1,80 @@
+{
+  "name": "protobuf-varint",
+  "version": "1.0.0",
+  "description": "fast, javascript-only, compatible protobuf compatible varint codecs",
+  "type": "module",
+  "module": "./lib/index.mjs",
+  "exports": {
+    ".": {
+      "import": "./lib/index.mjs",
+      "types": "./lib/index.d.mts"
+    },
+    "./types": {
+      "import": "./lib/types.mjs",
+      "types": "./lib/types.d.mts"
+    },
+    "./codecs": {
+      "import": "./lib/codecs.mjs",
+      "types": "./lib/codecs.d.mts"
+    },
+    "./errors": {
+      "import": "./lib/errors.mjs",
+      "types": "./lib/errors.d.mts"
+    },
+    "./int32": {
+      "import": "./lib/int32.mjs",
+      "types": "./lib/int32.d.mts"
+    },
+    "./int64": {
+      "import": "./lib/int64.mjs",
+      "types": "./lib/int64.d.mts"
+    },
+    "./sint32": {
+      "import": "./lib/sint32.mjs",
+      "types": "./lib/sint32.d.mts"
+    },
+    "./sint64": {
+      "import": "./lib/sint64.mjs",
+      "types": "./lib/sint64.d.mts"
+    },
+    "./uint32": {
+      "import": "./lib/uint32.mjs",
+      "types": "./lib/uint32.d.mts"
+    },
+    "./uint64": {
+      "import": "./lib/uint64.mjs",
+      "types": "./lib/uint64.d.mts"
+    }
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "scripts": {
+    "integration": "npm run lint && npm run coverage",
+    "test": "npm run lint && npm run unit",
+    "lint": "prettier -c .",
+    "lint:fix": "prettier -w .",
+    "unit": "node test/index.mjs",
+    "coverage": "c8 -r=text -r=html npm run unit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/martinheidegger/protobuf-varint.git"
+  },
+  "keywords": [
+    "varint",
+    "protobuf",
+    "encode",
+    "decode",
+    "protocol-buffers"
+  ],
+  "author": "Martin Heidegger <martin.heidegger@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "c8": "^7.11.2",
+    "longfn": "^1.3.1",
+    "prettier": "^3.1.1"
+  }
+}
